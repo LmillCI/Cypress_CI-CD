@@ -1,6 +1,6 @@
 {
   "scripts": {
-      "build": "npx cypress run",
+      "build": "npx cypress run"
     
   },
   "devDependencies": {
