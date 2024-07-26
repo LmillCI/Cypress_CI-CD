@@ -1,6 +1,7 @@
 {
   "scripts": {
-      "build": "npx cypress run"
+      "build": "npx cypress run",
+    "install": "npm i --save-dev cypress-mochawesome-reporter"
   },
   "devDependencies": {
     "cypress": "^13.13.1",
