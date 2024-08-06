@@ -3,6 +3,7 @@ describe('mysuite1', ()=>
      it('Login Test', ()=>
     {
          cy.visit("https://opensource-demo.orangehrmlive.com/");
+        cy.screenshot('homepage');
          cy.get("input[name='username']").type("Admin");
          cy.get("input[name='password']").type("admin123");
          cy.get("button[type='submit']").click();  
