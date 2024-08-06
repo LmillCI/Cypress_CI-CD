@@ -16,28 +16,11 @@ jobs:
           runTests: false
           build: npm run build
 
-      - name: Save build folder
+      - name: Upload screenshots
         uses: actions/upload-artifact@v4.3.5
         with:
-          name: build
+          name: screenshots
           if-no-files-found: error
-          path: build
+          path: cypress/screenshots
 
-  cypress-run:
-    runs-on: ubuntu-22.04
-    needs: install
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Download the build folder
-        uses: actions/download-artifact@v4
-        with:
-          name: build
-          path: build
-
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
-        with:
-          start: npm start
-          browser: chrome
+  
