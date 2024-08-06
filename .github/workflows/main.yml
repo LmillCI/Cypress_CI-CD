@@ -32,8 +32,8 @@ jobs:
       - name: Download the build folder
         uses: actions/download-artifact@v4
         with:
-          name: download screenshots
-          path: cypress/downloads
+          name: screenshots
+          path: cypress/screenshots
 
       
 
