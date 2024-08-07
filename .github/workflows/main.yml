@@ -21,7 +21,7 @@ jobs:
         with:
           name: screenshots
           if-no-files-found: error
-          path: cypress/screenshots
+          path: ./cypress/screenshots
   cypress-run:
     runs-on: ubuntu-22.04
     needs: install
@@ -33,7 +33,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: screenshots
-          path: cypress/screenshots
+          path: ./cypress/screenshots
 
       
 
